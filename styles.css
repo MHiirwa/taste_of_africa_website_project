@@ -7,21 +7,21 @@
 
 /* ---------- 1. Variables (palette inspired by spices & savanna landscapes) ---------- */
 :root {
-  --terracotta: #b5472b;
-  --deep-red: #7a1f1a;
-  --mustard: #e3a92b;
-  --earth: #4a2e1f;
-  --leaf: #3f6b3a;
-  --cream: #fbf3e4;
+  --terracotta: #4f8a78;
+  --deep-red: #355c63;
+  --mustard: #8fae8a;
+  --earth: #203b3d;
+  --leaf: #5f8f6b;
+  --cream: #f4f1e7;
 
   --bg: var(--cream);
-  --surface: #ffffff;
-  --surface-alt: #f4e6cc;
-  --text: #2d1d14;
-  --muted: #6e5a4c;
-  --border: #e5d3b3;
+  --surface: #fbfaf5;
+  --surface-alt: #e5eee7;
+  --text: #203438;
+  --muted: #536b6b;
+  --border: #c2d5ce;
   --link: var(--deep-red);
-  --shadow: 0 6px 18px rgba(74, 46, 31, 0.15);
+  --shadow: 0 6px 18px rgba(32, 59, 61, 0.16);
 
   --radius: 1rem;
   --font-head: "Rozha One", Georgia, serif;
@@ -29,14 +29,14 @@
 }
 
 [data-theme="dark"] {
-  --bg: #1d1511;
-  --surface: #2a1f19;
-  --surface-alt: #34261e;
-  --text: #f3e8d8;
-  --muted: #c4b19c;
-  --border: #4a382d;
-  --link: #f0b04a;
-  --shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  --bg: #000000;
+  --surface: #000000;
+  --surface-alt: #111111;
+  --text: #e9f0e9;
+  --muted: #b8cfca;
+  --border: #344d50;
+  --link: #a9d2c2;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
 }
 
 /* ---------- 2. Base ---------- */
@@ -55,7 +55,7 @@ body {
 }
 
 h1, h2, h3 { font-family: var(--font-head); font-weight: 400; line-height: 1.2; color: var(--deep-red); margin: 0 0 0.75rem; }
-[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3 { color: var(--mustard); }
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3 { color: #c5ddc2; }
 h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
 h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin-top: 2rem; }
 h3 { font-size: 1.3rem; }
@@ -119,10 +119,11 @@ mark {
   cursor: pointer; transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
 }
 .btn:hover { background: var(--terracotta); border-color: var(--terracotta); color: #fff; transform: translateY(-2px); }
-.btn-accent { background: var(--mustard); border-color: var(--mustard); color: #2d1d14; }
-.btn-accent:hover { background: #f1bb44; border-color: #f1bb44; color: #2d1d14; }
+.btn-accent { background: var(--mustard); border-color: var(--mustard); color: var(--earth); }
+.btn-accent:hover { background: #a9c5a2; border-color: #a9c5a2; color: var(--earth); }
 .btn-outline { background: transparent; color: #fff; border-color: #fff; }
 .btn-outline:hover { background: #fff; color: var(--deep-red); border-color: #fff; }
+[data-theme="dark"] .btn-outline:hover { background: #000; color: #d7ebe2; border-color: #d7ebe2; }
 
 /* ---------- 4. Header & navigation ---------- */
 .site-header {
@@ -162,13 +163,13 @@ mark {
 /* ---------- 5. Hero & page banners ---------- */
 .hero {
   background:
-    linear-gradient(110deg, rgba(74, 20, 14, 0.9) 0%, rgba(122, 31, 26, 0.72) 55%, rgba(74, 46, 31, 0.55) 100%),
+    linear-gradient(110deg, rgba(32, 59, 61, 0.92) 0%, rgba(53, 92, 99, 0.78) 55%, rgba(32, 59, 61, 0.56) 100%),
     url("images/jollof-plate.jpg") center 40% / cover no-repeat;
   color: #fff; padding-block: clamp(3rem, 9vw, 6rem); min-height: 70vh; display: flex; align-items: center;
 }
 .hero-grid { display: grid; gap: 2.5rem; grid-template-columns: 1.1fr 1fr; align-items: center; }
 .hero h1 { color: #fff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); }
-.hero .lead { color: #fbeacb; }
+.hero .lead { color: #dbe8df; }
 .hero mark { background: transparent; color: #fff; }
 .eyebrow { text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700; color: var(--mustard); margin-bottom: 0.5rem; }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
@@ -178,7 +179,7 @@ mark {
   border-bottom: 6px solid var(--mustard);
 }
 .page-banner h1 { color: #fff; }
-.page-banner .lead { color: #fbeacb; max-width: 42rem; margin-inline: auto; }
+.page-banner .lead { color: #dbe8df; max-width: 42rem; margin-inline: auto; }
 
 /* ---------- 6. Cards ---------- */
 .card, .dish-card {
@@ -186,7 +187,7 @@ mark {
   display: flex; flex-direction: column; border: 1px solid var(--border);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-.card:hover, .dish-card:hover { transform: translateY(-6px); box-shadow: 0 14px 28px rgba(74, 46, 31, 0.28); }
+.card:hover, .dish-card:hover { transform: translateY(-6px); box-shadow: 0 14px 28px rgba(32, 59, 61, 0.24); }
 .card img, .dish-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 .card figure { margin: 0; }
 .card-body, .dish-card figcaption { padding: 1.1rem 1.25rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
@@ -199,7 +200,7 @@ mark {
 }
 .fav-btn:hover { border-color: #d6301f; }
 .fav-btn.active { background: #fde8e5; border-color: #d6301f; color: #a01c10; }
-[data-theme="dark"] .fav-btn.active { background: #4a1f1a; color: #ffb4a8; }
+[data-theme="dark"] .fav-btn.active { background: #31544f; color: #c5e0d2; }
 .fav-btn.active .fav-icon { display: inline-block; animation: pop 0.35s ease; }
 
 /* The bunny chow photo is a small portrait image: keep the loaves in frame */
@@ -335,7 +336,7 @@ table.nutrition { width: 100%; max-width: 32rem; border-collapse: collapse; back
 .field textarea { resize: vertical; min-height: 9rem; }
 .field input:hover, .field select:hover, .field textarea:hover { border-color: var(--terracotta); }
 .field input:focus, .field select:focus, .field textarea:focus {
-  outline: none; border-color: var(--mustard); box-shadow: 0 0 0 4px rgba(227, 169, 43, 0.35);
+  outline: none; border-color: var(--mustard); box-shadow: 0 0 0 4px rgba(143, 174, 138, 0.35);
 }
 .field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #c62828; }
 .error { color: #c62828; font-weight: 700; font-size: 0.92rem; margin: 0.3rem 0 0; min-height: 1.2em; }
@@ -346,15 +347,15 @@ table.nutrition { width: 100%; max-width: 32rem; border-collapse: collapse; back
 .confirmation[hidden] { display: none; }
 
 /* ---------- 10. Footer ---------- */
-.site-footer { background: var(--earth); color: #f3e8d8; margin-top: 3rem; padding-top: 2.5rem; border-top: 6px solid var(--mustard); }
+.site-footer { background: var(--earth); color: #e9f0e9; margin-top: 3rem; padding-top: 2.5rem; border-top: 6px solid var(--mustard); }
 .site-footer h2 { color: var(--mustard); font-size: 1.25rem; margin-top: 0; }
-.site-footer a { color: #f3e8d8; }
+.site-footer a { color: #e9f0e9; }
 .site-footer a:hover { color: var(--mustard); }
 .footer-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
 .footer-grid ul { list-style: none; padding: 0; }
 .newsletter { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .newsletter input { flex: 1 1 10rem; padding: 0.6rem 0.9rem; border-radius: 999px; border: 2px solid transparent; font: inherit; }
-.newsletter input:focus { outline: none; border-color: var(--mustard); box-shadow: 0 0 0 3px rgba(227, 169, 43, 0.4); }
+.newsletter input:focus { outline: none; border-color: var(--mustard); box-shadow: 0 0 0 3px rgba(143, 174, 138, 0.4); }
 .form-msg { flex-basis: 100%; margin: 0; min-height: 1.4em; font-weight: 700; }
 .copyright { text-align: center; margin: 2rem 0 0; padding: 1rem; background: rgba(0, 0, 0, 0.25); font-size: 0.9rem; }
 
@@ -367,6 +368,339 @@ table.nutrition { width: 100%; max-width: 32rem; border-collapse: collapse; back
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .js .reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- Homepage template styling ---------- */
+.home-page {
+  background: var(--bg);
+}
+
+.home-page .site-header {
+  background: #000;
+  border-bottom-color: var(--mustard);
+}
+
+.home-page .hero {
+  min-height: 78vh;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.68) 46%, rgba(0, 0, 0, 0.2) 100%),
+    url("images/jollof-plate.jpg") center 40% / cover no-repeat;
+}
+
+.home-page .hero h1 {
+  max-width: 14ch;
+  font-size: clamp(2.8rem, 7vw, 5.3rem);
+  letter-spacing: 0.01em;
+}
+
+.home-page .hero .lead {
+  max-width: 34rem;
+}
+
+.home-page .section {
+  padding-block: clamp(3.5rem, 8vw, 6rem);
+}
+
+.home-page .section-title {
+  letter-spacing: 0.03em;
+}
+
+.home-page .card,
+.home-page .dish-card,
+.home-page .gallery-item,
+.home-page .trend {
+  border-radius: 0.65rem;
+  border-color: var(--border);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.home-page .dish-card img {
+  aspect-ratio: 1 / 1;
+}
+
+.home-page .dish-card figcaption {
+  padding: 1rem;
+}
+
+.home-page .dish-card h3,
+.home-page .trend h3 {
+  letter-spacing: 0.02em;
+}
+
+.home-page .band {
+  background: var(--surface-alt);
+}
+
+.home-page .region-tile {
+  min-height: 19rem;
+  border-radius: 0.65rem;
+}
+
+.home-page .gallery-item img {
+  aspect-ratio: 4 / 5;
+}
+
+[data-theme="dark"] .home-page .site-header {
+  background: #000;
+}
+
+[data-theme="dark"] .home-page h1,
+[data-theme="dark"] .home-page h2,
+[data-theme="dark"] .home-page h3 {
+  color: #fff;
+}
+
+[data-theme="dark"] .home-page .section-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  margin: 0.8rem auto 0;
+  background: var(--mustard);
+}
+
+/* ---------- Site-wide template styling ---------- */
+.site-header {
+  background: var(--earth);
+  border-bottom: 0;
+  box-shadow: 0 2px 12px rgba(32, 59, 61, 0.18);
+}
+
+.header-inner {
+  min-height: 4.5rem;
+  padding-block: 0.8rem;
+}
+
+.brand {
+  color: #d7ebe2;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a[aria-current="page"] {
+  background: var(--terracotta);
+}
+
+.page-banner {
+  min-height: 22rem;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(110deg, rgba(32, 59, 61, 0.96), rgba(53, 92, 99, 0.82)),
+    url("images/pepper-soup.jpg") center / cover;
+  border-bottom: 0;
+  text-align: left;
+}
+
+.page-banner .container {
+  width: min(100% - 2rem, 58rem);
+}
+
+.page-banner h1 {
+  max-width: 13ch;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 0.01em;
+}
+
+.page-banner .lead {
+  max-width: 36rem;
+  margin-inline: 0;
+}
+
+.section {
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.section-title {
+  letter-spacing: 0.02em;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  margin: 0.8rem auto 0;
+  background: var(--mustard);
+}
+
+.card,
+.dish-card,
+.gallery-item,
+.trend,
+.panel,
+.form,
+.confirmation {
+  border-radius: 0.65rem;
+  border-color: var(--border);
+  box-shadow: 0 10px 24px rgba(32, 59, 61, 0.14);
+}
+
+.card,
+.dish-card {
+  background: var(--surface);
+}
+
+.card img,
+.dish-card img {
+  aspect-ratio: 4 / 3;
+}
+
+.region-tile {
+  min-height: 18rem;
+  border-radius: 0.65rem;
+}
+
+.recipe-page {
+  max-width: 68rem;
+}
+
+.recipe-head {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  box-shadow: var(--shadow);
+}
+
+.recipe-hero img,
+.photo-feature img {
+  border-radius: 0.5rem;
+}
+
+.panel {
+  background: var(--surface);
+}
+
+.form {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: var(--surface);
+}
+
+.site-footer {
+  margin-top: 0;
+  padding-block: 4.5rem 1rem;
+  background:
+    linear-gradient(135deg, rgba(79, 138, 120, 0.18), transparent 42%),
+    var(--earth);
+  border-top: 3px solid var(--mustard);
+}
+
+.site-footer .footer-grid {
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.site-footer section {
+  min-width: 0;
+}
+
+.site-footer h2 {
+  margin-bottom: 1rem;
+  color: #d7ebe2;
+  letter-spacing: 0.03em;
+}
+
+.site-footer p {
+  max-width: 28rem;
+  color: #b8cfca;
+}
+
+.site-footer ul {
+  margin: 0;
+}
+
+.site-footer li {
+  margin-bottom: 0.45rem;
+}
+
+.site-footer a {
+  display: inline-block;
+  color: #d7ebe2;
+  text-underline-offset: 0.25em;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--mustard);
+}
+
+.site-footer .newsletter {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(215, 235, 226, 0.18);
+  border-radius: 0.65rem;
+}
+
+.site-footer .newsletter input {
+  min-width: 0;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.site-footer .newsletter .btn {
+  white-space: nowrap;
+}
+
+.copyright {
+  max-width: 72rem;
+  margin: 3rem auto 0;
+  padding: 1rem;
+  color: #9eb8b3;
+  border-top: 1px solid rgba(215, 235, 226, 0.18);
+  background: transparent;
+}
+
+[data-theme="dark"] .site-header,
+[data-theme="dark"] .site-footer {
+  background: #000;
+}
+
+[data-theme="dark"] .site-footer {
+  background:
+    linear-gradient(135deg, rgba(79, 138, 120, 0.12), transparent 42%),
+    #000;
+}
+
+[data-theme="dark"] .site-footer .newsletter {
+  background: #111;
+  border-color: #344d50;
+}
+
+[data-theme="dark"] .site-footer .newsletter input {
+  background: #000;
+}
+
+[data-theme="dark"] .page-banner {
+  background:
+    linear-gradient(110deg, rgba(0, 0, 0, 0.96), rgba(17, 17, 17, 0.88)),
+    url("images/pepper-soup.jpg") center / cover;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .dish-card,
+[data-theme="dark"] .gallery-item,
+[data-theme="dark"] .trend,
+[data-theme="dark"] .panel,
+[data-theme="dark"] .form,
+[data-theme="dark"] .confirmation,
+[data-theme="dark"] .recipe-head {
+  background: #000;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 48rem) {
+  .page-banner {
+    min-height: 18rem;
+  }
+
+  .site-footer {
+    padding-block: 3.5rem 1rem;
+  }
+
+  .site-footer .newsletter {
+    max-width: 30rem;
+  }
 }
 
 /* ---------- 12. Responsive ---------- */
