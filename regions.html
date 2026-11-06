@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary regions | Tastes of Africa</title>
+  <meta name="description" content="Explore West, North and East African food cultures.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home"><span aria-hidden="true">🍲</span> Tastes of Africa</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html" aria-current="page">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="fav-link" href="recipes.html" title="Your favorites" aria-label="Your favorites">❤️ <span id="fav-count">0</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Culinary regions</h1>
+    <p class="lead">Africa has 54 countries and thousands of food traditions. Start with three of its great culinary regions.</p>
+  </div>
+</section>
+<section class="section container" aria-labelledby="regions-list">
+  <h2 id="regions-list" class="sr-only">Regions</h2>
+  <div class="grid grid-3">
+    <a class="region-tile reveal" href="west-africa.html" style="--tile:url('images/pepper-soup.jpg')">
+      <span class="region-name">West Africa</span><span class="region-sub">Nigeria &amp; more</span>
+    </a>
+    <a class="region-tile reveal" href="north-africa.html" style="--tile:url('images/tagine.jpg')">
+      <span class="region-name">North Africa</span><span class="region-sub">Morocco &amp; more</span>
+    </a>
+    <a class="region-tile reveal" href="east-africa.html" style="--tile:url('images/injera.jpg')">
+      <span class="region-name">East Africa</span><span class="region-sub">Ethiopia &amp; more</span>
+    </a>
+  </div>
+  <p class="note">Looking for Southern Africa? Try the <a href="bunny-chow.html">bunny chow</a> recipe from Durban.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Tastes of Africa</h2>
+      <p>Celebrating the flavours, ingredients and stories of African food heritage.</p>
+    </section>
+    <section aria-labelledby="footer-links">
+      <h2 id="footer-links">Explore</h2>
+      <ul>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Culinary regions</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="footer-news">
+      <h2 id="footer-news">Newsletter</h2>
+      <form id="newsletter-form" class="newsletter" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span id="year">2026</span> Tastes of Africa. Built for the ALU front-end formative.</p>
+</footer>
+</body>
+</html>

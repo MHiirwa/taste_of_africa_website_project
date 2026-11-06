@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jollof Rice | Tastes of Africa</title>
+  <meta name="description" content="Jollof Rice from Nigeria: ingredients, instructions and video.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home"><span aria-hidden="true">🍲</span> Tastes of Africa</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="fav-link" href="recipes.html" title="Your favorites" aria-label="Your favorites">❤️ <span id="fav-count">0</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="container recipe-page" data-id="jollof-rice" data-region="west-africa">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="recipes.html">Recipes</a> &rsaquo; <span>Jollof Rice</span></nav>
+  <header class="recipe-head">
+    <figure class="recipe-hero">
+      <img src="images/jollof-rice.jpg" alt="Jollof rice served with a grilled chicken leg, fried plantain and a creamy vegetable salad" width="800" height="600">
+      <figcaption>Photo: Jollof Rice</figcaption>
+    </figure>
+    <div>
+      <p class="tag">West Africa &middot; Nigeria</p>
+      <h1>Jollof Rice</h1>
+      <p class="lead">A smoky, tomato-red one-pot rice that is the star of every West African party.</p>
+      <p class="meta"><span>⏱ 1 hr 15 min</span> <span>🍽 Serves 4</span></p>
+      <button type="button" class="fav-btn" data-id="jollof-rice" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+    </div>
+  </header>
+
+  <section aria-labelledby="about-dish">
+    <h2 id="about-dish">About this dish</h2>
+    <p>Jollof is West Africa's celebration dish: long-grain rice steamed in a rich sauce of <mark>tomatoes</mark>, <mark>scotch bonnet</mark> peppers and onions. It is often traced back to the Senegambia region, and today Nigeria, Ghana, Senegal and others lovingly argue over who makes it best. The prized "party jollof" gets its smoky flavour from the bottom of the pot.</p>
+  </section>
+
+  <div class="recipe-cols">
+    <section class="panel" aria-labelledby="ingredients-title" data-base-servings="4" id="scaler-panel">
+      <h2 id="ingredients-title">Ingredients</h2>
+      <div class="scaler" role="group" aria-label="Adjust servings">
+        <span>Servings:</span>
+        <button type="button" class="scale-btn" data-delta="-1" aria-label="Fewer servings">&minus;</button>
+        <output id="servings-value" aria-live="polite">4</output>
+        <button type="button" class="scale-btn" data-delta="1" aria-label="More servings">+</button>
+        <button type="button" class="scale-reset" id="scale-reset">Reset</button>
+      </div>
+      <ul id="ingredient-list" class="ingredients">
+            <li data-qty="2" data-unit="cups" data-name="long-grain parboiled rice">2 cups long-grain parboiled rice</li>
+            <li data-qty="4" data-unit="" data-name="large ripe tomatoes">4 large ripe tomatoes</li>
+            <li data-qty="2" data-unit="" data-name="red bell peppers">2 red bell peppers</li>
+            <li data-qty="1" data-unit="" data-name="scotch bonnet pepper (or to taste)">1 scotch bonnet pepper (or to taste)</li>
+            <li data-qty="2" data-unit="" data-name="medium onions">2 medium onions</li>
+            <li data-qty="3" data-unit="tbsp" data-name="tomato paste">3 tbsp tomato paste</li>
+            <li data-qty="0.25" data-unit="cup" data-name="vegetable oil">0.25 cup vegetable oil</li>
+            <li data-qty="2" data-unit="cups" data-name="chicken or vegetable stock">2 cups chicken or vegetable stock</li>
+            <li data-qty="1" data-unit="tsp" data-name="dried thyme">1 tsp dried thyme</li>
+            <li data-qty="1" data-unit="tsp" data-name="curry powder">1 tsp curry powder</li>
+            <li data-qty="2" data-unit="" data-name="bay leaves">2 bay leaves</li>
+            <li>Salt to taste</li>
+      </ul>
+    </section>
+
+    <section class="panel" aria-labelledby="method-title">
+      <h2 id="method-title">Cooking instructions</h2>
+      <details class="instructions" open>
+        <summary>Step-by-step method</summary>
+        <ol>
+            <li>Blend the tomatoes, bell peppers, scotch bonnet and one onion into a smooth purée.</li>
+            <li>Heat the oil in a heavy pot. Fry the second onion (sliced) for 3 minutes, then stir in the tomato paste and fry for 5 minutes until it darkens.</li>
+            <li>Pour in the purée, add thyme, curry powder, bay leaves and salt. Simmer uncovered for 20-25 minutes until thick and the oil rises to the top.</li>
+            <li>Rinse the rice until the water runs mostly clear. Stir it into the sauce with the hot stock, so the liquid just covers the rice.</li>
+            <li>Cover the pot with foil and a tight lid. Cook on the lowest heat for 30 minutes, without stirring, so the rice steams.</li>
+            <li>Fluff with a fork, let the bottom crisp for a few minutes for the classic smoky taste, and serve with fried plantain.</li>
+        </ol>
+      </details>
+      <details class="instructions">
+        <summary>Chef's tips</summary>
+        <p>Taste and adjust the seasoning at the end. Use the servings buttons above to scale the ingredients, and keep the heat low whenever a recipe says to simmer.</p>
+      </details>
+    </section>
+  </div>
+
+  <section aria-labelledby="video-title">
+    <h2 id="video-title">Watch a tutorial</h2>
+    <div class="video-wrap">
+  <iframe src="https://www.youtube-nocookie.com/embed/MvJ9z7zcMI0" title="How to cook Nigerian jollof rice" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p class="video-note">Video not loading? <a href="https://www.youtube.com/watch?v=MvJ9z7zcMI0" target="_blank" rel="noopener">Watch on YouTube</a>.</p>
+  </section>
+
+  <section aria-labelledby="nutrition-title">
+    <h2 id="nutrition-title">Nutrition facts</h2>
+    <table class="nutrition">
+      <caption>Approximate values per serving</caption>
+      <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+      <tbody>
+          <tr><th scope="row">Calories</th><td>480 kcal</td></tr>
+          <tr><th scope="row">Protein</th><td>9 g</td></tr>
+          <tr><th scope="row">Carbohydrates</th><td>80 g</td></tr>
+          <tr><th scope="row">Fat</th><td>14 g</td></tr>
+          <tr><th scope="row">Fibre</th><td>4 g</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="map-title">
+    <h2 id="map-title">Where it comes from: Nigeria</h2>
+    <div class="map-wrap">
+  <iframe src="https://www.google.com/maps?q=Lagos,+Nigeria&amp;output=embed" title="Map showing Lagos, Nigeria" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</div>
+  </section>
+
+  <section aria-labelledby="more-title">
+    <h2 id="more-title">More recipes to try</h2>
+    <ul class="link-list"><li><a href="injera.html">Injera</a> <span class="muted">(Ethiopia)</span></li><li><a href="tagine.html">Chicken Tagine</a> <span class="muted">(Morocco)</span></li><li><a href="bunny-chow.html">Bunny Chow</a> <span class="muted">(South Africa)</span></li><li><a href="isombe.html">Isombe</a> <span class="muted">(Rwanda)</span></li></ul>
+  </section>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Tastes of Africa</h2>
+      <p>Celebrating the flavours, ingredients and stories of African food heritage.</p>
+    </section>
+    <section aria-labelledby="footer-links">
+      <h2 id="footer-links">Explore</h2>
+      <ul>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Culinary regions</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="footer-news">
+      <h2 id="footer-news">Newsletter</h2>
+      <form id="newsletter-form" class="newsletter" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span id="year">2026</span> Tastes of Africa. Built for the ALU front-end formative.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isombe | Tastes of Africa</title>
+  <meta name="description" content="Isombe from Rwanda: ingredients, instructions and video.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home"><span aria-hidden="true">🍲</span> Tastes of Africa</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="fav-link" href="recipes.html" title="Your favorites" aria-label="Your favorites">❤️ <span id="fav-count">0</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="container recipe-page" data-id="isombe" data-region="east-africa">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="recipes.html">Recipes</a> &rsaquo; <span>Isombe</span></nav>
+  <header class="recipe-head">
+    <figure class="recipe-hero">
+      <img src="images/isombe.jpg" alt="A bowl of thick green leaf stew with chunks of meat, served beside a mound of white ugali" width="800" height="600">
+      <figcaption>Photo: Isombe</figcaption>
+    </figure>
+    <div>
+      <p class="tag">East Africa &middot; Rwanda</p>
+      <h1>Isombe</h1>
+      <p class="lead">Rwanda's beloved stew of pounded cassava leaves, creamy with peanut butter.</p>
+      <p class="meta"><span>⏱ 1 hr 30 min</span> <span>🍽 Serves 4</span></p>
+      <button type="button" class="fav-btn" data-id="isombe" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+    </div>
+  </header>
+
+  <section aria-labelledby="about-dish">
+    <h2 id="about-dish">About this dish</h2>
+    <p>Isombe is a comforting Rwandan dish of pounded <mark>cassava leaves</mark> simmered with onions, eggplant and <mark>groundnuts</mark> (peanuts). It is rich in greens and traditionally served with rice, ugali or plantains. Cassava leaves must always be cooked thoroughly, which is why isombe simmers slowly until tender.</p>
+  </section>
+
+  <div class="recipe-cols">
+    <section class="panel" aria-labelledby="ingredients-title" data-base-servings="4" id="scaler-panel">
+      <h2 id="ingredients-title">Ingredients</h2>
+      <div class="scaler" role="group" aria-label="Adjust servings">
+        <span>Servings:</span>
+        <button type="button" class="scale-btn" data-delta="-1" aria-label="Fewer servings">&minus;</button>
+        <output id="servings-value" aria-live="polite">4</output>
+        <button type="button" class="scale-btn" data-delta="1" aria-label="More servings">+</button>
+        <button type="button" class="scale-reset" id="scale-reset">Reset</button>
+      </div>
+      <ul id="ingredient-list" class="ingredients">
+            <li data-qty="500" data-unit="g" data-name="cassava leaves, pounded (or kale / spinach)">500 g cassava leaves, pounded (or kale / spinach)</li>
+            <li data-qty="1" data-unit="" data-name="eggplant, diced">1 eggplant, diced</li>
+            <li data-qty="1" data-unit="" data-name="large onion, chopped">1 large onion, chopped</li>
+            <li data-qty="3" data-unit="" data-name="garlic cloves, minced">3 garlic cloves, minced</li>
+            <li data-qty="1" data-unit="" data-name="green pepper, chopped">1 green pepper, chopped</li>
+            <li data-qty="3" data-unit="tbsp" data-name="palm or vegetable oil">3 tbsp palm or vegetable oil</li>
+            <li data-qty="4" data-unit="tbsp" data-name="smooth peanut butter">4 tbsp smooth peanut butter</li>
+            <li data-qty="2" data-unit="cups" data-name="water">2 cups water</li>
+            <li>Salt to taste</li>
+            <li>Smoked fish, optional</li>
+      </ul>
+    </section>
+
+    <section class="panel" aria-labelledby="method-title">
+      <h2 id="method-title">Cooking instructions</h2>
+      <details class="instructions" open>
+        <summary>Step-by-step method</summary>
+        <ol>
+            <li>Rinse the cassava leaves well. Boil them in water for 30 minutes (fresh leaves must be cooked thoroughly), then drain.</li>
+            <li>Heat the oil and fry the onion, garlic and green pepper for 5 minutes.</li>
+            <li>Add the eggplant and cook for 5 more minutes, then add the drained cassava leaves and the water.</li>
+            <li>Cover and simmer on low heat for 30-40 minutes, stirring occasionally.</li>
+            <li>Stir in the peanut butter and salt and simmer for 10 more minutes until creamy.</li>
+            <li>Serve hot with rice, ugali or boiled plantains.</li>
+        </ol>
+      </details>
+      <details class="instructions">
+        <summary>Chef's tips</summary>
+        <p>Taste and adjust the seasoning at the end. Use the servings buttons above to scale the ingredients, and keep the heat low whenever a recipe says to simmer.</p>
+      </details>
+    </section>
+  </div>
+
+  <section aria-labelledby="video-title">
+    <h2 id="video-title">Watch a tutorial</h2>
+    <div class="video-wrap">
+  <iframe src="https://www.youtube-nocookie.com/embed/9srQN_fU1uI" title="How to cook isombe (cassava leaves stew)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p class="video-note">Video not loading? <a href="https://www.youtube.com/watch?v=9srQN_fU1uI" target="_blank" rel="noopener">Watch on YouTube</a>.</p>
+  </section>
+
+  <section aria-labelledby="nutrition-title">
+    <h2 id="nutrition-title">Nutrition facts</h2>
+    <table class="nutrition">
+      <caption>Approximate values per serving</caption>
+      <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+      <tbody>
+          <tr><th scope="row">Calories</th><td>280 kcal</td></tr>
+          <tr><th scope="row">Protein</th><td>9 g</td></tr>
+          <tr><th scope="row">Carbohydrates</th><td>15 g</td></tr>
+          <tr><th scope="row">Fat</th><td>22 g</td></tr>
+          <tr><th scope="row">Fibre</th><td>6 g</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="map-title">
+    <h2 id="map-title">Where it comes from: Rwanda</h2>
+    <div class="map-wrap">
+  <iframe src="https://www.google.com/maps?q=Kigali,+Rwanda&amp;output=embed" title="Map showing Kigali, Rwanda" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</div>
+  </section>
+
+  <section aria-labelledby="more-title">
+    <h2 id="more-title">More recipes to try</h2>
+    <ul class="link-list"><li><a href="jollof-rice.html">Jollof Rice</a> <span class="muted">(Nigeria)</span></li><li><a href="injera.html">Injera</a> <span class="muted">(Ethiopia)</span></li><li><a href="tagine.html">Chicken Tagine</a> <span class="muted">(Morocco)</span></li><li><a href="bunny-chow.html">Bunny Chow</a> <span class="muted">(South Africa)</span></li></ul>
+  </section>
+</article>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Tastes of Africa</h2>
+      <p>Celebrating the flavours, ingredients and stories of African food heritage.</p>
+    </section>
+    <section aria-labelledby="footer-links">
+      <h2 id="footer-links">Explore</h2>
+      <ul>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Culinary regions</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="footer-news">
+      <h2 id="footer-news">Newsletter</h2>
+      <form id="newsletter-form" class="newsletter" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span id="year">2026</span> Tastes of Africa. Built for the ALU front-end formative.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>East Africa | Tastes of Africa</title>
+  <meta name="description" content="Food culture, staples and cooking techniques of East Africa.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home"><span aria-hidden="true">🍲</span> Tastes of Africa</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html" aria-current="page">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="fav-link" href="recipes.html" title="Your favorites" aria-label="Your favorites">❤️ <span id="fav-count">0</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <h1>East Africa</h1>
+    <p class="lead">From the Ethiopian highlands to the Swahili coast and the green hills of Rwanda, East African food is as varied as the landscape, with fermented breads, hearty greens, grilled meat and fragrant coastal spice.</p>
+  </div>
+</section>
+<div class="container region-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="regions.html">Regions</a> &rsaquo; <span>East Africa</span></nav>
+  <section aria-labelledby="culture-title">
+    <h2 id="culture-title">Food culture</h2>
+    <p><strong>Where:</strong> Ethiopia, Eritrea, Kenya, Tanzania, Uganda, Rwanda, Burundi and Somalia.</p>
+    <p>Sharing is central: injera is eaten from one big platter, ugali is rolled by hand, and coffee ceremonies in Ethiopia turn a drink into an hour of conversation.</p>
+  <figure class="photo-feature reveal">
+    <img src="images/ugali-beans-fish.jpg" alt="A plate with ugali, stewed beans, sauteed greens and a whole fried tilapia" width="800" height="600" loading="lazy">
+    <figcaption>A hearty East African-style plate: ugali, stewed beans, greens and fried tilapia.</figcaption>
+  </figure>
+  </section>
+
+  <div class="recipe-cols">
+    <section class="panel" aria-labelledby="staples-title">
+      <h2 id="staples-title">Staple ingredients</h2>
+      <ul class="check-list">
+        <li>Teff, maize and sorghum</li>
+        <li>Beans, peas and lentils</li>
+        <li>Plantain, cassava and sweet potato</li>
+        <li>Leafy greens such as cassava leaves</li>
+        <li>Goat, beef and fish</li>
+      </ul>
+    </section>
+    <section class="panel" aria-labelledby="tech-title">
+      <h2 id="tech-title">Cooking techniques</h2>
+      <ul class="check-list">
+        <li>Fermenting batter for <mark>injera</mark></li>
+        <li>Cooking flatbread on a clay griddle (mitad)</li>
+        <li>Roasting meat over coals: <mark>nyama choma</mark></li>
+        <li>Steaming plantains in banana leaves</li>
+        <li>Simmering greens with groundnuts, as in isombe</li>
+      </ul>
+    </section>
+  </div>
+
+  <section aria-labelledby="spice-title">
+    <h2 id="spice-title">Signature spices &amp; flavours</h2>
+    <ul class="chips">
+      <li><mark>Berbere</mark></li>
+        <li><mark>Mitmita</mark></li>
+        <li><mark>Cardamom</mark></li>
+        <li><mark>Cloves</mark></li>
+        <li><mark>Coconut</mark> (Swahili coast)</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="dishes-title">
+    <h2 id="dishes-title">Example dishes</h2>
+    <div class="grid grid-3">
+      <article class="card reveal">
+        <figure><img src="images/injera.jpg" alt="An Ethiopian platter with injera lining a round tray, topped with colourful lentil, vegetable and beef stews, a salad and a boiled egg" width="800" height="600" loading="lazy"></figure>
+        <div class="card-body"><h3>Injera</h3><p>Sour, spongy teff flatbread, the Ethiopian table's centrepiece.</p><a class="btn" href="injera.html">View recipe</a></div>
+      </article>
+      <article class="card reveal">
+        <figure><img src="images/isombe.jpg" alt="A bowl of thick green leaf stew with chunks of meat, served beside a mound of white ugali" width="800" height="600" loading="lazy"></figure>
+        <div class="card-body"><h3>Isombe</h3><p>Rwandan cassava leaves in a creamy peanut sauce.</p><a class="btn" href="isombe.html">View recipe</a></div>
+      </article>
+    </div>
+    <h3>More to explore</h3>
+    <ul class="link-list">
+      <li>Doro wat (Ethiopian chicken stew)</li>
+        <li>Ugali with sukuma wiki</li>
+        <li>Nyama choma (Kenyan roast meat)</li>
+        <li>Mandazi (sweet fried dough)</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="video-title">
+    <h2 id="video-title">Watch: the food of East Africa</h2>
+    <div class="video-wrap">
+  <iframe src="https://www.youtube-nocookie.com/embed/sl5DGWdq92U" title="Cooking Rwandan food: a global cooking adventure" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<p class="video-note">Video not loading? <a href="https://www.youtube.com/watch?v=sl5DGWdq92U" target="_blank" rel="noopener">Watch on YouTube</a>.</p>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Tastes of Africa</h2>
+      <p>Celebrating the flavours, ingredients and stories of African food heritage.</p>
+    </section>
+    <section aria-labelledby="footer-links">
+      <h2 id="footer-links">Explore</h2>
+      <ul>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Culinary regions</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="footer-news">
+      <h2 id="footer-news">Newsletter</h2>
+      <form id="newsletter-form" class="newsletter" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span id="year">2026</span> Tastes of Africa. Built for the ALU front-end formative.</p>
+</footer>
+</body>
+</html>

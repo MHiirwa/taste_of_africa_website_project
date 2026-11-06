@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Tastes of Africa</title>
+  <meta name="description" content="Contact the Tastes of Africa team.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home"><span aria-hidden="true">🍲</span> Tastes of Africa</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="fav-link" href="recipes.html" title="Your favorites" aria-label="Your favorites">❤️ <span id="fav-count">0</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Contact us</h1>
+    <p class="lead">Questions, recipe ideas or feedback? Send us a message.</p>
+  </div>
+</section>
+<section class="section container contact" aria-labelledby="form-title">
+  <h2 id="form-title" class="sr-only">Contact form</h2>
+  <form id="contact-form" class="form" novalidate>
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+      <p class="error" id="name-error" role="alert"></p>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+      <p class="error" id="email-error" role="alert"></p>
+    </div>
+    <div class="field">
+      <label for="country">Country</label>
+      <select id="country" name="country" required aria-describedby="country-error">
+        <option value="">Select your country</option>
+          <option value="Rwanda">Rwanda</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Ethiopia">Ethiopia</option>
+          <option value="Morocco">Morocco</option>
+          <option value="South Africa">South Africa</option>
+          <option value="Egypt">Egypt</option>
+          <option value="Tanzania">Tanzania</option>
+          <option value="Uganda">Uganda</option>
+          <option value="Senegal">Senegal</option>
+          <option value="United States">United States</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Canada">Canada</option>
+          <option value="France">France</option>
+        <option value="other">Other (type below)</option>
+      </select>
+      <p class="error" id="country-error" role="alert"></p>
+    </div>
+    <div class="field">
+      <label for="country-other">Other country <span class="muted">(optional, with suggestions)</span></label>
+      <input type="text" id="country-other" name="country-other" list="country-suggestions" placeholder="Start typing...">
+      <datalist id="country-suggestions">
+        <option value="Algeria"></option>
+        <option value="Tunisia"></option>
+        <option value="Cameroon"></option>
+        <option value="Zambia"></option>
+        <option value="Zimbabwe"></option>
+        <option value="Mali"></option>
+        <option value="Ivory Coast"></option>
+        <option value="Sudan"></option>
+        <option value="Somalia"></option>
+        <option value="Botswana"></option>
+        <option value="Namibia"></option>
+        <option value="Germany"></option>
+        <option value="Brazil"></option>
+        <option value="Australia"></option>
+      </datalist>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required aria-describedby="message-error message-count"></textarea>
+      <p class="hint" id="message-count">0 characters (more than 20 needed)</p>
+      <p class="error" id="message-error" role="alert"></p>
+    </div>
+    <button type="submit" class="btn btn-accent">Send message</button>
+  </form>
+  <div id="confirmation" class="confirmation" tabindex="-1" role="status" aria-live="polite" hidden></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Tastes of Africa</h2>
+      <p>Celebrating the flavours, ingredients and stories of African food heritage.</p>
+    </section>
+    <section aria-labelledby="footer-links">
+      <h2 id="footer-links">Explore</h2>
+      <ul>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Culinary regions</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="footer-news">
+      <h2 id="footer-news">Newsletter</h2>
+      <form id="newsletter-form" class="newsletter" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span id="year">2026</span> Tastes of Africa. Built for the ALU front-end formative.</p>
+</footer>
+</body>
+</html>

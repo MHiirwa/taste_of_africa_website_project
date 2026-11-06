@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Tastes of Africa</title>
+  <meta name="description" content="African recipes with videos, ingredients and step-by-step instructions.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍲%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Rozha+One&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Tastes of Africa home"><span aria-hidden="true">🍲</span> Tastes of Africa</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="fav-link" href="recipes.html" title="Your favorites" aria-label="Your favorites">❤️ <span id="fav-count">0</span></a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <h1>Recipes</h1>
+    <p class="lead">Five dishes from across the continent. Filter by region, save your favorites, and start cooking.</p>
+  </div>
+</section>
+<section class="section container" aria-labelledby="filter-title">
+  <h2 id="filter-title" class="sr-only">Filter recipes</h2>
+  <div class="filter-bar" role="group" aria-label="Filter recipes by region">
+    <button type="button" class="filter-btn active" data-region="all" aria-pressed="true">All</button>
+    <button type="button" class="filter-btn" data-region="west-africa" aria-pressed="false">West Africa</button>
+    <button type="button" class="filter-btn" data-region="north-africa" aria-pressed="false">North Africa</button>
+    <button type="button" class="filter-btn" data-region="east-africa" aria-pressed="false">East Africa</button>
+    <button type="button" class="filter-btn" data-region="southern-africa" aria-pressed="false">Southern Africa</button>
+    <button type="button" class="filter-btn" data-region="favorites" aria-pressed="false">❤️ My favorites</button>
+  </div>
+  <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+  <div id="recipe-grid" class="grid grid-3">
+        <article class="recipe-card card reveal" data-id="jollof-rice" data-region="west-africa">
+          <figure>
+            <img src="images/jollof-rice.jpg" alt="Jollof rice served with a grilled chicken leg, fried plantain and a creamy vegetable salad" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="card-body">
+            <p class="tag">West Africa</p>
+            <h3>Jollof Rice</h3>
+            <p>A smoky, tomato-red one-pot rice that is the star of every West African party.</p>
+            <p class="meta"><span>⏱ 1 hr 15 min</span> <span>🍽 Serves 4</span></p>
+            <div class="card-actions">
+              <a class="btn" href="jollof-rice.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="jollof-rice" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-card card reveal" data-id="injera" data-region="east-africa">
+          <figure>
+            <img src="images/injera.jpg" alt="An Ethiopian platter with injera lining a round tray, topped with colourful lentil, vegetable and beef stews, a salad and a boiled egg" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="card-body">
+            <p class="tag">East Africa</p>
+            <h3>Injera</h3>
+            <p>A spongy, slightly sour flatbread made from teff, used as plate and spoon.</p>
+            <p class="meta"><span>⏱ 3 days (mostly fermenting)</span> <span>🍽 Serves 4</span></p>
+            <div class="card-actions">
+              <a class="btn" href="injera.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="injera" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-card card reveal" data-id="tagine" data-region="north-africa">
+          <figure>
+            <img src="images/tagine.jpg" alt="Roasted chicken pieces in a clay dish with green olives, lemon slices and fresh herbs in a golden sauce" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="card-body">
+            <p class="tag">North Africa</p>
+            <h3>Chicken Tagine</h3>
+            <p>Chicken slow-cooked with olives and preserved lemon in a cone-lidded clay pot.</p>
+            <p class="meta"><span>⏱ 1 hr 30 min</span> <span>🍽 Serves 4</span></p>
+            <div class="card-actions">
+              <a class="btn" href="tagine.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="tagine" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-card card reveal" data-id="bunny-chow" data-region="southern-africa">
+          <figure>
+            <img src="images/bunny-chow.jpg" alt="Hollowed-out bread loaves filled with a chickpea and vegetable curry and garnished with herbs" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="card-body">
+            <p class="tag">Southern Africa</p>
+            <h3>Bunny Chow</h3>
+            <p>Durban's famous street food: spicy curry served inside a hollowed-out loaf.</p>
+            <p class="meta"><span>⏱ 1 hr 15 min</span> <span>🍽 Serves 4</span></p>
+            <div class="card-actions">
+              <a class="btn" href="bunny-chow.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="bunny-chow" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-card card reveal" data-id="isombe" data-region="east-africa">
+          <figure>
+            <img src="images/isombe.jpg" alt="A bowl of thick green leaf stew with chunks of meat, served beside a mound of white ugali" width="800" height="600" loading="lazy">
+          </figure>
+          <div class="card-body">
+            <p class="tag">East Africa</p>
+            <h3>Isombe</h3>
+            <p>Rwanda's beloved stew of pounded cassava leaves, creamy with peanut butter.</p>
+            <p class="meta"><span>⏱ 1 hr 30 min</span> <span>🍽 Serves 4</span></p>
+            <div class="card-actions">
+              <a class="btn" href="isombe.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="isombe" aria-pressed="false"><span class="fav-icon" aria-hidden="true">🤍</span> <span class="fav-label">Favorite</span></button>
+            </div>
+          </div>
+        </article>
+  </div>
+  <p id="no-results" class="empty-state" hidden>No recipes to show here yet. Try another region, or tap the heart on a recipe to save it.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section aria-labelledby="footer-about">
+      <h2 id="footer-about">Tastes of Africa</h2>
+      <p>Celebrating the flavours, ingredients and stories of African food heritage.</p>
+    </section>
+    <section aria-labelledby="footer-links">
+      <h2 id="footer-links">Explore</h2>
+      <ul>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Culinary regions</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <section aria-labelledby="footer-news">
+      <h2 id="footer-news">Newsletter</h2>
+      <form id="newsletter-form" class="newsletter" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="newsletter-msg" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </div>
+  <p class="copyright">&copy; <span id="year">2026</span> Tastes of Africa. Built for the ALU front-end formative.</p>
+</footer>
+</body>
+</html>
